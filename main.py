@@ -7,7 +7,7 @@ class Fraction:
 
         if den < 0:
             den, num = -den, -num
-
+            
         self.num = num
         self.den = den
         self.sokr()
@@ -53,7 +53,6 @@ class Fraction:
             return Fraction(self.num ** power, self.den ** power)
 
         return Fraction(self.den ** (-power), self.num ** (-power))
-
 
 def read_fraction(text):
     p = list(map(int, text.split("/")))
