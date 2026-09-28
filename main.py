@@ -55,7 +55,7 @@ class Fraction:
         return Fraction(self.den ** (-power), self.num ** (-power))
 
 def read_fraction(text):
-    p = list(map(int, text.split("/"))
+    p = list(map(int, text.split("/")))
     if len(p) == 1:
         return Fraction(p[0], 1)
     if len(p) == 2:
